@@ -1,0 +1,146 @@
+/********************TOP SECTION****************/
+
+#top .info  {
+	        animation: tracking-in-expand 1s ease-in-out;
+          animation:  ease-in-out slide-in-left 1s ;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#top .img .background-img {
+   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
+}
+
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/****************SERVICE************/
+
+.anim {
+    opacity: 0;
+    transition: all 1.5s ease-in;
+  }
+
+.serv-anim {
+    opacity: 1;
+    
+}
+
+
+
+/****************PORTFOLIO************/
+
+.port-anim {
+  opacity: 0;
+  transition: all 1s ease-in;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	       
+}
+
+.port{
+  opacity: 1;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+
+/****************Experience************/
+
+.experi{
+    opacity: 0;
+    transition: all 1s ease-in;
+    animation: scale-in-center 3s;
+}
+.experi-anim{
+    opacity: 1;
+}
+
+@keyframes scale-in-center {
+  0% {
+            filter: blur(12px);
+
+  }
+  100% {
+            -webkit-filter: blur(0px);
+
+  }
+}
+/* @keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+} */
